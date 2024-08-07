@@ -1,0 +1,65 @@
+$bg-color: #fff;
+$text-color: #333;
+$primary-color: hsl(211, 94%, 21%);
+$info-color: #46677c;
+
+#quote-box {
+  background-color: $bg-color;
+  color: $text-color;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 50%;
+  width: 500px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 1.1);
+  position: relative;
+
+  .quote-text {
+    font-size: 24px;
+    margin-bottom: 16px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .quote-author {
+    font-size: 20px;
+    margin-bottom: 16px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .buttons {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .btn {
+    &.btn-primary {
+      background-color: $primary-color;
+      color: white;
+      font-size: 24px;
+      padding: 10px 20px;
+      border-radius: 10px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 1.2);
+      margin-bottom: 10px;
+    }
+
+    &.btn-info {
+      background-color: $info-color;
+      color: white;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    }
+  }
+}
